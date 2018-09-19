@@ -25,8 +25,14 @@ const config = {
         test: /\.scss$/,
         use: [
           isDevEnv? 'style-loader': MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader'
+          { 
+            loader: 'css-loader',
+            options: { sourcemap: isDevEnv }
+          },
+          { 
+            loader: 'sass-loader',
+            options: { sourcemap: isDevEnv }
+          }
         ]
       }
     ]
