@@ -1,5 +1,7 @@
 import * as React from "react";
 import * as ReactDom from "react-dom";
+// Components
+import { Welcome } from "./components/Welcome/Welcome";
 // CSS assets
 import "./scss/app.scss";
 
@@ -9,7 +11,7 @@ export class App extends React.Component {
   }
 
   public render() {
-    return <h1>Hello React</h1>;
+    return <Welcome name="Ameer Jhan" />;
   }
 }
 

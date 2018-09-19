@@ -10,6 +10,9 @@ const config = {
     filename: isDevEnv ? "app.bunble.js" : "app.[hash].bundle.js",
     path: path.resolve(rootDir, "dist")
   },
+  resolve: {
+    extensions: [".tsx", ".js", ".json", ".ts"]
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: isDevEnv ? "[name].bundle.css" : "[name].[hash].bundle.css",
@@ -33,7 +36,7 @@ const config = {
       {
         test: /\.tsx?$/,
         use: "ts-loader",
-        exclude: /node_modules/
+        exclude: /node_modules|setupEnzyme.ts/
       },
       {
         test: /\.scss$/,
@@ -58,6 +61,18 @@ const config = {
             options: {
               name: "[name].[ext]",
               outputPath: "fonts/"
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(png|jp(e*)g|svg)$/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8000,
+              name: "[name]-[hash].[ext]"
             }
           }
         ]
