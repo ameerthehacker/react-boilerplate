@@ -27,11 +27,12 @@ const config = {
           isDevEnv? 'style-loader': MiniCssExtractPlugin.loader,
           { 
             loader: 'css-loader',
-            options: { sourcemap: isDevEnv }
+            options: { sourceMap: isDevEnv }
           },
+          'postcss-loader',
           { 
             loader: 'sass-loader',
-            options: { sourcemap: isDevEnv }
+            options: { sourceMap: isDevEnv }
           }
         ]
       }
