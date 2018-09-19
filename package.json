@@ -1,0 +1,24 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "A react scaffold with react, typescript, jest, prettier, tslint, scss, husky",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ameerthehacker/react-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "typescript",
+    "boilerplate"
+  ],
+  "author": "ameerthehacker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ameerthehacker/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ameerthehacker/react-boilerplate#readme"
+}
