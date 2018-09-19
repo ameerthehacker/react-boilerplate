@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A react scaffold with react, typescript, jest, prettier, tslint, scss, husky",
   "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.js",
     "test": "jest",
     "build": "cross-env NODE_ENV=development webpack --config build/webpack.config.js",
     "build:prod": "cross-env NODE_ENV=production webpack --config build/webpack.config.js"
@@ -42,6 +43,7 @@
     "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8",
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {

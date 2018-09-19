@@ -23,6 +23,11 @@ const config = {
       showErrors: isDevEnv
     })
   ],
+  devServer: {
+    contentBase: path.join(rootDir, 'dist'),
+    compress: true,
+    port: 4200
+  },
   module: {
     rules: [
       {
