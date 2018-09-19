@@ -4,8 +4,8 @@
   "description": "A react scaffold with react, typescript, jest, prettier, tslint, scss, husky",
   "scripts": {
     "test": "jest",
-    "build": "cross-env NODE_ENV=development webpack",
-    "build:prod": "cross-env NODE_ENV=production webpack"
+    "build": "cross-env NODE_ENV=development webpack --config build/webpack.config.js",
+    "build:prod": "cross-env NODE_ENV=production webpack --config build/webpack.config.js"
   },
   "repository": {
     "type": "git",
