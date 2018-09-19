@@ -100,6 +100,14 @@ npm run build:prod
 - This will not include sourcemaps
 - Assets(js,css) will be minified
 
+6. Build the project with watch (development)
+
+```sh
+npm run build:watch
+```
+
+The project will be rebuilt everytime you change any file.
+
 Show your support by :star: the repo
 
 ## License
