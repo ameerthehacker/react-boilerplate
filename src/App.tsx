@@ -3,7 +3,7 @@ import * as ReactDom from 'react-dom';
 // CSS assets
 import './scss/app.scss';
 
-class App extends React.Component {
+export class App extends React.Component {
   constructor(props: any) {
     super(props);
   }
