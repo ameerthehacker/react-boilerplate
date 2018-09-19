@@ -6,6 +6,7 @@
     "start": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.js --open --progress",
     "test": "jest",
     "build": "cross-env NODE_ENV=development webpack --config build/webpack.config.js --progress",
+    "build:watch": "cross-env NODE_ENV=development webpack --config build/webpack.config.js --progress --watch",
     "build:prod": "cross-env NODE_ENV=production webpack --config build/webpack.config.js --progress",
     "coverage": "jest --coverage",
     "lint": "tslint **/**.ts? --fix",
