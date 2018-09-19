@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A react scaffold with react, typescript, jest, prettier, tslint, scss, husky",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "cross-env NODE_ENV=development webpack",
+    "build:prod": "cross-env NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/ameerthehacker/react-boilerplate/issues"
   },
-  "homepage": "https://github.com/ameerthehacker/react-boilerplate#readme"
+  "homepage": "https://github.com/ameerthehacker/react-boilerplate#readme",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "ts-loader": "^5.1.1",
+    "typescript": "^3.0.3",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-merge": "^4.1.4"
+  }
 }
